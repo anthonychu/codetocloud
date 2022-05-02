@@ -4,8 +4,8 @@
 
 You'll be working with the app in this repository. It consists of two projects.
 
-- `aca-frontend` - A Node.js app that serves the web frontend UI for a music store. It calls a web API to retrieve albums data.
-- `aca-node` - The web API that serves album data at `/albums`.
+- `aca-node` - A web API that serves data about music albums at `/albums`.
+- `aca-frontend` - A Node.js app that serves the web frontend UI for a music store. It calls the web API to retrieve albums data.
 
 ```mermaid
 flowchart LR
@@ -24,9 +24,8 @@ For this study, you won't be working directly with the code; we've created Docke
 
 These images are in a public repository and do not require authentication.
 
-- `albums.azurecr.io/aca-frontend:1.0` – the frontend app
-    * Exposed port: 3000
-    * Environment variables:
-        * `API_BASE_URL` - This variable must be set to the base URL of the backend API (e.g., `https://backend.my-app.com`).
 - `albums.azurecr.io/aca-node:1.0` – the backend web API
-    * Exposed port: 3000
+    * Listens to port 3000
+- `albums.azurecr.io/aca-frontend:1.0` – the frontend app
+    * Listens to port 3000
+    * The `API_BASE_URL` environment must be set to the base URL of the backend API. Include the scheme (`http://` or `https://`) and do not include a trailing slash. For example, `https://album-api.myhostname.com`).
