@@ -28,4 +28,4 @@ These images are in a public repository and do not require authentication.
     * Listens to port 3000
 - `albums.azurecr.io/aca-frontend:1.0` – the frontend app
     * Listens to port 3000
-    * The `API_BASE_URL` environment must be set to the base URL of the backend API. Include the scheme (`http://` or `https://`) and do not include a trailing slash. For example, `https://album-api.myhostname.com`).
+    * The `API_BASE_URL` environment variable must be set to the base URL of the backend API. Include the scheme (`http://` or `https://`) and do not include a trailing slash. For example, `https://album-api.myhostname.com`).
